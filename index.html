@@ -1,22 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="scripts/script.js" defer></script>
+
   <title>Florería</title>
 </head>
+
 <body>
 
-  <header>
-    <h1>Florería</h1>
-    <nav></nav>
+  <header class="header">
+    <section class="header__wrapper">
+      <h1><a class="header__logo" href="index.html">B&W <em>8am a 5pm</em></a></h1>
+      <div class="header__icons d-flex">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ingresar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cesta (0)</a>
+        </li>
+      </div>
+
+      <button id="theme"></button>
+
+
+      <nav class="header__nav nav is-closed" id="bigmenu">
+        <ul class="nav__ul">
+          <li class="nav__category dropdown is-closed">
+            <a class="dropdown__toggle" href="#" role="button" aria-expanded="false">
+              Arreglos florales
+            </a>
+            <ul>
+              <li><a class="nav__tag dropdown__item" href="#">Decoraciones para eventos</a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Ramos de flores</a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Flores con cajas de regalo</a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Ramos de flores </a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Coronas de flores para el pelo</a></li>
+            </ul>
+          </li>
+          <li class="nav__category dropdown is-closed">
+            <a class="dropdown__toggle" href="#" role="button" aria-expanded="false">
+              Fores para ocasiones
+            </a>
+            <ul>
+              <li><a class="nav__tag dropdown__item" href="#">Agradecimientos</a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Bienvenidas</a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Cumpleaños</a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Felicitaciones</a></li>
+              <li><a class="nav__tag dropdown__item" href="#">Reconocimientos</a></li>
+            </ul>
+          </li>
+          <li class="nav__icon d-none d-md-block">
+            <a class="nav-link" href="#">Ingresar</a>
+          </li>
+          <li class="nav__icon d-none d-md-block">
+            <a class="nav-link" href="#">Cesta (0)</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__ham ham" id="bigtoggle" aria-controls="bigmenu" aria-expanded="false" aria-label="abre el menu principal">
+        <span class="ham__line"></span>
+        <span class="ham__line"></span>
+        <span class="ham__line"></span>
+      </button>
+    </section>
   </header>
+
+
+
+
 
   <main></main>
   <footer></footer>
-  
+
 </body>
+
 </html>
